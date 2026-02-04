@@ -60,7 +60,7 @@ def main():
         api_key=SecretStr(API_KEY),
         api_version="2024-08-01-preview",
         azure_endpoint=DIAL_URL,
-        model="gpt-4.1-nano-2025-04-14"  # Using turbo model for testing prompt injection vulnerabilities
+        model="gpt-4.1-nano-2025-04-14"  # Using nano model for cost efficiency
     )
 
     messages: list[BaseMessage] = [
